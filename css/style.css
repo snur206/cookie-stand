@@ -1,0 +1,27 @@
+*{ 
+    font-family: 'Times New Roman', Times, serif;
+}
+body { 
+    background-color: burlywood;
+}
+
+h1 {
+font-size: 4vw; 
+   color: black;
+   text-shadow: 800px 50px 400px wheat,
+   -6px -6px 6px white; 
+}
+
+h2{
+    font-size: 3vw;
+    background-color: black;
+    color: white;
+    
+}
+
+
+ul {
+    background: gold;
+    color: blacke;
+    list-style-position: inside;
+}
