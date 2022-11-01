@@ -23,7 +23,13 @@ function randomCustomer(min, max) {
 //   this.avgCookies = avgCookies;
 // }
 
-// Object Literals
+let shopSection = document.getElementById('shopProfiles');
+
+console.dir(shopSection);
+
+
+// #pragma: OBJECY LITERALS
+
 let seattle = {
   name: 'Seattle',
   hourlyCookies: [],
