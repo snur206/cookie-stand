@@ -49,7 +49,9 @@ Shop.prototype.render = function() {
     row1.appendChild(tableData);
     tableData.textContent = this.hourlyCookies[i];
   }
-  
+  let dailyTotal = document.createElement('td');
+  dailyTotal.textContent = this.totalPerDay;
+  row1.appendChild(dailyTotal);
 };
 let seattle = new Shop('Seattle', 23, 65, 6.3);
 let tokyo = new Shop('Tokyo', 3, 24, 1.2);
@@ -58,22 +60,49 @@ let paris = new Shop('Paris', 20, 38, 2.3);
 let lima =new Shop('Lima', 2, 16, 4.6);
 console.log(allShops);
 
+//function makeHead() {
+
+
 function makeHeader() {
   let row1 = document.createElement('tr');
   tableElem.appendChild(row1);
+  let tableRow = document.createElement('td');
+  tableRow.textContent = ' ';
 
-  let firstCell = document.createElement('th');
-  row1.appendChild(firstCell);
+  row1.appendChild(tableRow);
+
+
+  //tableElem.appendChild(row1);
+
+
+
 
   for (let i = 0; i < shopHours.length; i++) {
-    let tableData = document.createElement('th');
+    let tableData = document.createElement('td');
     row1.appendChild(tableData);
     tableData.textContent = shopHours[i];
   }
+  let totalRow = document.createElement('td');
+  totalRow.textContent = 'Daily Location Total';
+
+  row1.appendChild(totalRow);
 }
 makeHeader();
 
+function makeFooter() {
+  let tableHeader = document.createElement('tr');
+  tableHeader.textContent = 'Totals';
+  let tableRow = document.createElement('tr');
+  tableRow.appendChild(tableHeader);
 
+
+  tableElem.appendChild(tableRow);
+}
+
+
+//for (let i = 0; i < shopHours.length; i++) {
+
+// }
 
 
 
@@ -243,4 +272,4 @@ lima.getCookienum();
 console.log(lima);
 lima.render();
 
-
+makeFooter();
