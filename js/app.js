@@ -60,7 +60,6 @@ let paris = new Shop('Paris', 20, 38, 2.3);
 let lima =new Shop('Lima', 2, 16, 4.6);
 console.log(allShops);
 
-//function makeHead() {
 
 
 function makeHeader() {
@@ -72,7 +71,6 @@ function makeHeader() {
   row1.appendChild(tableRow);
 
 
-  //tableElem.appendChild(row1);
 
 
 
@@ -111,10 +109,6 @@ function makeFooter() {
   tableElem.appendChild(tableRow);
 }
 
-
-
-
-// }
 
 
 
