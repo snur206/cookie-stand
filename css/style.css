@@ -1,27 +1,110 @@
-*{ 
-    font-family: 'Times New Roman', Times, serif;
-}
-body { 
-    background-color: burlywood;
+* {
+  font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
-font-size: 4vw; 
-   color: black;
-   text-shadow: 800px 50px 400px wheat,
-   -6px -6px 6px white; 
+body {
+  background-color: gold;
 }
 
-h2{
-    font-size: 3vw;
-    background-color: black;
-    color: white;
+nav {
+  text-align: center;
+  
+}
+
+#logo {
+  background-color: gold;
+  border: solid 5px greenyellow;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+img {
+  width: 50vw;
+}
+
+header h1 {
+  text-align: center;
+  text-shadow: 800px 50px 400px green,
+  -6px -6px 6px green; 
+  background-color: black;
+  font-size:50px;
+  color: white;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  color: green;
+}
+
+table {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  background-color: gold;
+}
+
+tr {
+  border: solid 5px black;
+  padding: 10px;
+}
+
+td {
+  border: solid 5px black;
+  padding: 5px;
+  margin: 5px;
+}
+
+* {
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: gold;
+  }
+  
+  nav {
+    text-align: center;
     
-}
-
-
-ul {
-    background: gold;
-    color: blacke;
-    list-style-position: inside;
-}
+  }
+  
+  #logo {
+    background-color: aquamarine;
+    border: solid 5px white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  img {
+    width: 50vw;
+  }
+  
+  h1 {
+    text-align: center;
+    background-color: green;
+    font-size:50px;
+    color: green;
+    font-family: sans-serif;
+  }
+  
+  h3 {
+    font-size: 30px;
+    color: green;
+  }
+  
+  table {
+    font-family:'Times New Roman', Times, serif;
+    color: whitesmoke;
+    background-color: green
+  }
+  
+  tr {
+    border: solid 5px gold;
+    padding: 10px;
+  }
+  
+  td {
+    border: solid 5px gold;
+    padding: 5px;
+    margin: 5px;
+  }
