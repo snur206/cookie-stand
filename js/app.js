@@ -94,8 +94,20 @@ function makeFooter() {
   tableHeader.textContent = 'Totals';
   let tableRow = document.createElement('tr');
   tableRow.appendChild(tableHeader);
-
-
+  let grandTotals = 0;
+  for (let i =0; i < shopHours.length; i++) {
+    let hourlyTotals = 0;
+    for (let j = 0; j < allShops.length; j++) {
+      hourlyTotals += allShops[j].hourlyCookies[i];
+      grandTotals += hourlyTotals;
+    }
+    tableHeader = document.createElement('th');
+    tableHeader.textContent = hourlyTotals;
+    tableRow.appendChild(tableHeader);
+  }
+  tableHeader = document.createElement('th');
+  tableHeader.textContent = grandTotals;
+  tableRow.appendChild(tableHeader);
   tableElem.appendChild(tableRow);
 }
 
