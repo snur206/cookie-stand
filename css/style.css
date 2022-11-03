@@ -114,3 +114,19 @@ td {
     width: auto;
     margin: auto;
   }
+
+div#imgGroup1 { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 8px;
+}
+
+div#imgGroup2 {
+  text-align: left;
+}
+
+div#imgGroup3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+}
