@@ -25,17 +25,17 @@ img {
 
 header h1 {
   text-align: center;
-  text-shadow: 800px 50px 400px green,
-  -6px -6px 6px green; 
-  background-color: black;
+  background-color: bisque;
   font-size:50px;
-  color: white;
-  font-family: sans-serif;
+  color: pink;
+  font-family: 'Dancing Script', cursive; 
 }
 
 h3 {
   font-size: 30px;
-  color: green;
+  background-color: salmon;
+  color: white;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 table {
@@ -60,7 +60,7 @@ td {
   }
   
   body {
-    background-color: salmon;
+    background-color: pink
   }
   
   nav {
@@ -89,7 +89,7 @@ td {
   
   h3 {
     font-size: 30px;
-    color: green;
+    color: white;
   }
   
   table {
@@ -107,4 +107,10 @@ td {
     border: solid 5px gold;
     padding: 5px;
     margin: 5px;
+  }
+  footer {
+    background-color: beige;
+    height: auto;
+    width: auto;
+    margin: auto;
   }
