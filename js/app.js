@@ -7,6 +7,11 @@ let shopHours = ['6 am', '7 am', '8 am', '9 am', '10 am', '11 am', '12 pm', '1 p
 let allShops = [];
 let tableElem = document.getElementById('Sales-Table');
 
+// ******* Form/Event Step 1 GRAB THE ELEMENT TO LISTEN T0! ******
+let myShop = document.getElementById('myshop');
+
+
+
 // from MDN
 function randomCustomer(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -91,13 +96,14 @@ function makeFooter() {
   let tableHeader = document.createElement('tr');
   tableHeader.textContent = 'Totals';
   let tableRow = document.createElement('tr');
+  tableRow.id = 'final';
   tableRow.appendChild(tableHeader);
   let grandTotals = 0;
   for (let i =0; i < shopHours.length; i++) {
     let hourlyTotals = 0;
     for (let j = 0; j < allShops.length; j++) {
       hourlyTotals += allShops[j].hourlyCookies[i];
-      grandTotals += hourlyTotals;
+      grandTotals += allShops[j].hourlyCookies[i];
     }
     tableHeader = document.createElement('th');
     tableHeader.textContent = hourlyTotals;
@@ -142,3 +148,23 @@ console.log(lima);
 lima.render();
 
 makeFooter();
+
+// ******* STEP 3: DEFINE OUR CALLBACK  ******
+function handleSubmit(event) {
+  event.preventDefault();
+
+  let city = event.target.cityName.value;
+  let minCustomers = event.target.minCustomers.value;
+  let maxCustomers = event.target.maxCustomers.value;
+  let avgCustomers = event.target.avgCustomers.value;
+
+  // gather temperment info from form
+  let newStore = new Shop(city, minCustomers, maxCustomers, avgCustomers);
+  newStore.getCookienum();
+  newStore.render();
+  document.getElementById('final').remove();
+  makeFooter();
+
+}
+// ******* STEP 2: ATTTACH EVENT LISTENER: tyoe of event, and our callback fuction or event handler ******
+myShop.addEventListener('submit',handleSubmit);

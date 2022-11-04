@@ -15,6 +15,24 @@
       <div id="Sales">
         <table id= "Sales-Table"></table>
       </div>
+      <form id="myshop">
+        <fieldset>
+          <legend>Select Location</legend>
+          <label for="cityName">City Name</label>
+          <input id="cityName" type="text" name="cityName">
+          <!-- event.target.city.value -->
+          <label for="minCustomers">Minimum amount of Customers per hour:</label>
+          <input id="minCustomers" type="text" name="minCustomers">
+          <!--event.target.minCustomers.value-->
+          <label for="maxCustomers">Maxiumum amount of Customers per hour:</label>
+          <input id="maxCustomers" type="text" name="maxCustomers">
+           <!--event.target.maxCustomers.value-->
+          <label for="avgCustomers">Average # of Cookies bought per customer:</label>
+          <input id="avgCustomers" type="text" name="avgCustomers">
+            <!--event.target.avgCustomers.value-->
+        </fieldset>
+        <button type="submit">Enter</button>
+      </form>
 </main>
 <footer>
 </footer>

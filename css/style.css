@@ -8,6 +8,7 @@ body {
 
 nav {
   text-align: center;
+  
 }
 
 #logo {
@@ -102,7 +103,7 @@ td {
   table {
     font-family:'Times New Roman', Times, serif;
     color: whitesmoke;
-    background-color: pink
+    background-color: salmon
   }
   
   tr {
@@ -139,3 +140,24 @@ div#imgGroup3 {
   column-gap: 15px;
 }
 
+form {
+
+  border: 3px solid beige;
+  padding: 20px;
+  width: 25%;
+}
+
+
+input {
+  margin-bottom: auto;
+  display: block;
+  margin-bottom: 25px;
+}
+
+select {
+  display: block;
+  margin-bottom: 25px;
+}
+button:hover {
+  background-color: yellow;
+}
